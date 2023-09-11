@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main - prints all the numbers of base 16 in lowercase followed by a new line
  * Return: Always 0 (success)
  */
 
@@ -10,18 +10,12 @@ int main(void)
 
 	int d;
 
-	c = 'a';
-	d = 0;
-	while
-		(d < 16) {
-			putchar(d + '0');
-			d++;
-		}
-	while
-		(c <= 'f') {
-			putchar(c);
-			c++;
-		}
+	for (c = 0; c < 10; c++)
+		putchar((c % 10) + '0');
+	for (d = 'a'; d <= 'f'; d++)
+		putchar(d);
+
 	putchar('\n');
+
 	return (0);
 }
