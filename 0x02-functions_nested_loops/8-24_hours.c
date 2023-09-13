@@ -2,7 +2,7 @@
 
 /**
  * jack_bauer -  prints every minute of the day of Jack Bauer
- * Return: void
+ * Return: ...
  */
 void jack_bauer(void)
 {
@@ -10,7 +10,7 @@ void jack_bauer(void)
 
 	for (a = 0; a < 24; a++)
 	{
-		for (b = 60; b < 60; b++)
+		for (b = 0; b < 60; b++)
 		{
 			_putchar((a / 10) + '0');
 			_putchar((a % 10) + '0');
