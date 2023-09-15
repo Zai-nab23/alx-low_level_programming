@@ -1,5 +1,5 @@
-#include "main.h"
 #include <stdio.h>
+
 /**
  * main - function prints the number from 1-100, but for multiples of three,
  *       fizz is printed instead of the number, for multiples of five,
