@@ -1,13 +1,43 @@
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
 /**
-* _putchar - writes the character c to stdout
-* @c:The character to print
-*
-* Return: On success 1.
-* On error, -1 is returned and errno is set appropriately.
+* main - entry
+* @argc: number of arguments
+* @argv: array of arguments
+* Return: 0 success
 */
-int _putchar(char c)
+
+int main(int argc, char *argv[])
 {
-	return (fwrite(1, &c, 1));
+	int num, j, result;
+	int coin[] = {25, 10, 5, 2, 1};
+
+	if (argc != 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
+
+	num = atoi(argv[1]);
+	result = 0;
+
+	if (num < 0)
+	{
+		printf("0\n");
+		return (0);
+	}
+	for (j = 0; j < 5 && num >= 0; j++)
+	{
+		while (num >= coin[j])
+		{
+			result++;
+			num -= coin[j];
+		}
+	}
+	printf("%d\n", result);
+	return (0);
 }
+
