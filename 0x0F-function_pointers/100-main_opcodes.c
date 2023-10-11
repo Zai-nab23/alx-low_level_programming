@@ -22,11 +22,11 @@ void print_opcodes(char *a, int n)
 
 /**
  * main - print the opcodes
- * @agrc: argument count
+ * @argc: argument count
  * @argv: argument vector
  * Return: 0
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 	int n;
 
