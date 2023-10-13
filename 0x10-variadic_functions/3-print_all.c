@@ -7,12 +7,10 @@
 void print_all(const char * const format, ...)
 {
 	int a, check_stat;
-
 	char *str;
 	va_list spc;
 
 	va_start(spc, format);
-
 	a = 0;
 	while (format != NULL && format[a] != '\0')
 	{
