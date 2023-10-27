@@ -9,6 +9,7 @@ unsigned int binary_to_uint(const char *b)
 {
 	int c;
 	unsigned int length;
+
 	if (!b)
 		return (0);
 	for (c = 0; b[c] != '\0'; c++)
