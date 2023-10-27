@@ -19,7 +19,7 @@ unsigned int binary_to_uint(const char *b)
 	}
 	for (c = 0; b[c] != '\0'; c++)
 	{
-		length <<= 1;
+		length >>= 1;
 		if (b[c] == '1')
 			length += 1;
 	}
