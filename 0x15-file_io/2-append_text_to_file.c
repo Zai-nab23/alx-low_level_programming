@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * append_text_file - function that appends text at the end of a file
+ * append_text_to_file - function that appends text at the end of a file
  * @filename: name of file content
  * @text_content: content of appended file
  * Return: Return 1 if the file exists and -1 if the file does not exist
