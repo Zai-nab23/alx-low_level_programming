@@ -6,7 +6,7 @@
  * @file_input: initial file
  * @file_output: final file
  * @argv: argument vector
- * Return:0 if successful
+ * Return: nothing
  */
 void error_detector(int file_input, int file_output, char *argv[])
 {
@@ -70,4 +70,3 @@ int main(int argc, char *argv[])
 	}
 	return (0);
 }
-
